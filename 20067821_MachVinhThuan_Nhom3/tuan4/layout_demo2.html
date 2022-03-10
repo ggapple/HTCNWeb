@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./layout_demo2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="menu-top">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li>
+            <a href="">SERVICES</a>
+            <ul class="sub-menu">
+              <li><a href="">TIVI</a></li>
+              <li><a href="">PHONE</a></li>
+              <li><a href="">LAPTOP</a></li>
+            </ul>
+          </li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">HELP</a></li>
+        </ul>
+        <span>
+          <i class="material-icons">search</i>
+          <input type="text" placeholder="Tìm kiếm" />
+        </span>
+      </nav>
+      <header><p>Hello World</p></header>
+      <div class="content">
+        <aside>
+          <h2>HOẠT ĐỘNG</h2>
+          <article>
+            <p>HỌC TẬP</p>
+            <img id="aside-img-1" src="../image/img-study.jpg" alt="" />
+          </article>
+          <article>
+            <p>MÙA HÈ XANH</p>
+            <img id="aside-img-2" src="../image/img-volunteer.jpg" alt="" />
+          </article>
+        </aside>
+        <section>
+          <h2>Bảng đăng kí</h2>
+          <form action="dangky.php">
+            <fieldset>
+              <legend>Thông tin của bạn</legend>
+              <label for="Name">Tên</label>
+              <input
+                type="text"
+                name="txt-name"
+                id="txt-name"
+                required
+                placeholder="Nhap Ho ten"
+              />
+              <br /><br />
+              <label for="Sex">Giới tính</label>
+              <input type="radio" name="rad-nam" id="rad-nam" value="Nam" />
+              <label for="">Nam</label>
+              <input type="radio" name="rad-nu" id="rad-nu" value="Nu" />
+              <label for="">Nu</label>
+              <br /><br />
+              <label for="Date">Ngày sinh</label>
+              <input type="date" name="txt-date" id="txt-date" required />
+              <br /><br />
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                name="txt-email"
+                id="txt-email"
+                required
+                placeholder="Nhap Email"
+              />
+              <br /><br />
+              <input type="submit" value="GO" id="btnGO" />
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>

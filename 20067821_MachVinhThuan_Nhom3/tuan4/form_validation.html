@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form_validation.css" />
+    <script src="./form_validation.js"></script>
+  </head>
+  <body>
+    <h2>ĐĂNG KÍ TÀI KHOẢN</h2>
+    <form name="form1" onsubmit="SubmitForm();" method="post" action="#"></form>
+    <div>
+      <label for="txtDN" class="titile">Tên đăng nhập:</label>
+      <input
+        type="text"
+        id="txtDN"
+        name="txtDN"
+        size="30"
+        placeholder="tên đăng nhập"
+        onblur=" KiemTraTenDN();"
+      />
+      <span id="tendn">*</span>
+    </div>
+    <div>
+      <label for="txtMK" class="titile">Mật khẩu:</label>
+      <input
+        type="password"
+        id="txtMK"
+        name="txtMK"
+        size="30"
+        placeholder="mật khẩu"
+        onblur=" KiemTraMK();"
+      />
+      <span id="mk">*</span>
+    </div>
+    <div>
+      <label for="txtXNMK" class="titile">Nhập lại mật khẩu:</label>
+      <input
+        type="password"
+        id="txtXNMK"
+        name="txtXNMK"
+        size="30"
+        placeholder="nhập lại mật khẩu"
+        onblur=" KiemTraXNMK();"
+      />
+      <span id="xnmk">*</span>
+    </div>
+    <h4>THÔNG TIN CÁ NHÂN</h4>
+    <div>
+      <label for="txtName" class="titile">Họ và tên:</label>
+      <input
+        type="text"
+        id="txtName"
+        name="txtName"
+        size="30"
+        placeholder="họ tên"
+      />
+      <span id="hoten">* bắt buộc</span>
+    </div>
+    <div>
+      <label for="txtNS" class="titile">Ngày sinh:</label>
+      <input
+        type="date"
+        id="txtNS"
+        name="txtNS"
+        size="30"
+        placeholder="ngày sinh"
+        onblur=" KiemTraNgaySinh();"
+      />
+      <span id="ngaysinh">*</span>
+    </div>
+    <div class="radio-button">
+      <label for="gender">Giới tính:</label>
+      <input type="radio" name="gender" id="male" value="M" />
+      <label for="male">Nam</label>
+      <input type="radio" name="gender" id="female" value="F" />
+      <label for="female">Nữ</label>
+    </div>
+    <div>
+      <label for="txtDC" class="titile">Địa chỉ:</label>
+      <input
+        type="text"
+        id="txtDC"
+        name="txtDC"
+        size="30"
+        placeholder="địa chỉ"
+      />
+      <span id="diachi">*</span>
+    </div>
+    <div>
+      <label for="txtDT" class="titile">Điện thoại:</label>
+      <input
+        type="text"
+        id="txtDT"
+        name="txtDT"
+        size="30"
+        placeholder="điện thoại"
+      />
+      <span id="dienthoai">* phải là số</span>
+    </div>
+    <div>
+      <label for="txtEmail" class="titile">Email:</label>
+      <input
+        type="email"
+        id="txtEmail"
+        name="txtEmail"
+        size="30"
+        placeholder="email"
+      />
+      <span id="email">*</span>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Đăng kí" id="submit" />
+      <input type="reset" value="Hủy" id="submit" />
+    </div>
+  </body>
+</html>
