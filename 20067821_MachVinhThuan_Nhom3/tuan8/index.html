@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- tao header -->
+      <div class="col-xs-12">
+        <img
+          src="./paner.jpg"
+          class="img-responsive"
+          alt="Image"
+          width="100%"
+        />
+      </div>
+      <!-- tao navbar -->
+      <div class="col-xs-12">
+        <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a class="navbar-link" href="#" id="btn1" style="margin-right: 20px;">Đăng nhập</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="#" id="btn2">Đăng ký</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- tao table -->
+      <div class="col-xs-12">
+          <h4 style="text-align: center;">Danh sách đội tuyển Việt Nam</h4>
+        <table class="table table-striped" role="table" id="danhsach">
+            <tr>
+              <th>STT</th>
+              <th>Họ Tên</th>
+              <th>Số áo</th>
+              <th>Địa chỉ</th>
+              <th>Ngày tập trung</th>
+              <th>Điện thoại</th>
+              <th>Ảnh đại diện</th>
+            </tr>
+      </div>
+      <!-- tao modal -->
+      <div class="modal fade" id="modal-id" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">  
+                    <h4 class="modal-title">Thông tin cá nhân</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <form action="" method="POST" class="form-horizontal" role="form">
+                              <label for="Name" class="control-label col-xs-3">Họ tên</label>
+                              <div class="col-xs-9">
+                                  <input type="text" id="Name" class="form-control">
+                                  <span class="text-danger" id="tbName">*</span>
+                              </div>
+                              <label for="Ao" class="control-label col-xs-3">Số áo</label>
+                              <div class="col-xs-9">
+                                  <input type="text" id="Ao" class="form-control">
+                                  <span class="text-danger" id="tbAo">*</span>
+                              </div>
+                              <label for="DC" class="control-label col-xs-3">Địa chỉ</label>
+                              <div class="col-xs-9">
+                                  <input type="text" id="DC" class="form-control">
+                                  <span class="text-danger" id="tbDC">*</span>
+                              </div>
+                              <label for="NTT" class="control-label col-xs-3">Ngày tập trung</label>
+                              <div class="col-xs-9">
+                                  <input type="date" id="NTT" class="form-control">
+                                  <span class="text-danger" id="tbNTT">*</span>
+                              </div>
+                              <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                              <div class="col-xs-9">
+                                  <input type="text" id="SDT" class="form-control">
+                                  <span class="text-danger" id="tbSDT">*</span>
+                              </div>
+                              <label for="ADD" class="control-label col-xs-3">Ảnh đại diện</label>
+                              <div class="col-xs-9">
+                                  <input type="file" id="ADD" class="form-control">
+                                  <span class="text-danger" id="tbADD">*</span>
+                              </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-success btn-group-justified" id="save" style="width: 100%; color: white; background-color: green;">Save</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- tao footer -->
+      <div class="col-xs-12">
+        <p style="text-align: center;">Mã sinh viên: 20067821  Lớp:DHCNTT16C</p>
+      </div>
+    </div>
+  </body>
+</html>
